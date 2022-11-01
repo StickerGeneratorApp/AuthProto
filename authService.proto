@@ -18,4 +18,10 @@ message RegisterRequest {
 }
 
 message RegisterReply {
+  ClientTokens tokens = 1;
+}
+
+message ClientTokens {
+  string accessToken = 1;
+  string refreshToken = 2;
 }
